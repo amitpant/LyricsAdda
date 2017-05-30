@@ -32,10 +32,25 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yT8-lg-cfz">
-                        <barButtonItem key="leftBarButtonItem" image="menu" id="KGT-Oa-9nH"/>
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="KGT-Oa-9nH">
+                            <color key="tintColor" red="0.96078431369999995" green="0.56862745100000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="menuClick:" destination="BYZ-38-t0r" id="CjU-zC-lOP"/>
+                            </connections>
+                        </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem image="share" id="RF1-zX-0Bd"/>
-                            <barButtonItem systemItem="search" id="49s-a9-2Ra"/>
+                            <barButtonItem image="share" id="RF1-zX-0Bd">
+                                <color key="tintColor" red="0.96078431369999995" green="0.56862745100000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="shareApp:" destination="BYZ-38-t0r" id="nUO-6f-pdW"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="search" id="49s-a9-2Ra">
+                                <color key="tintColor" red="0.96078431369999995" green="0.56862745100000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="search:" destination="BYZ-38-t0r" id="tId-VF-hbi"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
@@ -43,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="772" y="-546.47676161919048"/>
         </scene>
-        <!--View Controller-->
+        <!--LeftVC-->
         <scene sceneID="RDM-3q-wwK">
             <objects>
-                <viewController id="kl2-kC-6WM" sceneMemberID="viewController">
+                <viewController id="kl2-kC-6WM" customClass="LeftVC" customModule="Lyrics" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OEl-jB-E4E"/>
                         <viewControllerLayoutGuide type="bottom" id="POY-ZW-sdi"/>
@@ -54,12 +69,40 @@
                     <view key="view" contentMode="scaleToFill" id="9af-or-6Jv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v9Y-PS-xLf">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WbH-Kf-ycY">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WbH-Kf-ycY" id="Wmh-ql-W6k">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kl2-kC-6WM" id="ShN-Pz-0Zq"/>
+                                    <outlet property="delegate" destination="kl2-kC-6WM" id="JI6-jg-kMP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v9Y-PS-xLf" firstAttribute="top" secondItem="9af-or-6Jv" secondAttribute="top" id="Gps-CL-rbn"/>
+                            <constraint firstAttribute="trailing" secondItem="v9Y-PS-xLf" secondAttribute="trailing" id="ItC-d8-ClM"/>
+                            <constraint firstItem="POY-ZW-sdi" firstAttribute="top" secondItem="v9Y-PS-xLf" secondAttribute="bottom" id="Tgr-Sx-4DU"/>
+                            <constraint firstItem="v9Y-PS-xLf" firstAttribute="leading" secondItem="9af-or-6Jv" secondAttribute="leading" id="seY-Jq-GMw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="leftTableview" destination="v9Y-PS-xLf" id="c0F-gr-JYH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Cm-DG-oI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1434" y="-546"/>
+            <point key="canvasLocation" x="745" y="-1246"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LRQ-dF-SAM">

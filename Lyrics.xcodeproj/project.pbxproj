@@ -14,6 +14,7 @@
 		0F082DF11EDD742B001EB0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F082DF01EDD742B001EB0E8 /* Assets.xcassets */; };
 		0F082DF41EDD742B001EB0E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F082DF21EDD742B001EB0E8 /* LaunchScreen.storyboard */; };
 		0F082DFF1EDD742B001EB0E8 /* LyricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F082DFE1EDD742B001EB0E8 /* LyricsTests.swift */; };
+		0F082E0A1EDD7DFC001EB0E8 /* LeftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F082E091EDD7DFC001EB0E8 /* LeftVC.swift */; };
 		22153E4F3AA38C6BA075C7E1 /* Pods_LyricsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 407E3B4197DCAB219197860D /* Pods_LyricsTests.framework */; };
 		F63AE64B57FA16FA4FFE9735 /* Pods_Lyrics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FD84B3ABA7A1BE90D22BD9 /* Pods_Lyrics.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		0F082DFA1EDD742B001EB0E8 /* LyricsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyricsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F082DFE1EDD742B001EB0E8 /* LyricsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsTests.swift; sourceTree = "<group>"; };
 		0F082E001EDD742B001EB0E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F082E091EDD7DFC001EB0E8 /* LeftVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftVC.swift; sourceTree = "<group>"; };
 		1E44A1F6E959C039624F8466 /* Pods-LyricsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyricsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LyricsTests/Pods-LyricsTests.release.xcconfig"; sourceTree = "<group>"; };
 		28C3F3FE0415DFC95D752CDE /* Pods-LyricsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LyricsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LyricsTests/Pods-LyricsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		407E3B4197DCAB219197860D /* Pods_LyricsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LyricsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 				0F082DF21EDD742B001EB0E8 /* LaunchScreen.storyboard */,
 				0F082DF51EDD742B001EB0E8 /* Info.plist */,
 				0F082DED1EDD742B001EB0E8 /* Lyrics.xcdatamodeld */,
+				0F082E091EDD7DFC001EB0E8 /* LeftVC.swift */,
 			);
 			path = Lyrics;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				0F082DE91EDD742B001EB0E8 /* ViewController.swift in Sources */,
 				0F082DEF1EDD742B001EB0E8 /* Lyrics.xcdatamodeld in Sources */,
 				0F082DE71EDD742B001EB0E8 /* AppDelegate.swift in Sources */,
+				0F082E0A1EDD7DFC001EB0E8 /* LeftVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +552,7 @@
 				0F082E051EDD742B001EB0E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F082E061EDD742B001EB0E8 /* Build configuration list for PBXNativeTarget "LyricsTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +561,7 @@
 				0F082E081EDD742B001EB0E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
